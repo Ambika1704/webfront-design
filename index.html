@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevSolutions — Web Development Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#"><span>Dev</span>Solutions</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>We build fast, responsive websites.</h1>
+        <p>
+          From landing pages to full-stack apps—clean code, modern UI, and measurable performance.
+        </p>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="hero-media">
+        <img src="assets/image1.png" alt="Illustration of web development" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Our Services</h2>
+        <p>Everything you need to launch and grow on the web.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/image2.avif" alt="Web design" />
+          </div>
+          <div class="card-body">
+            <h3>Web Design</h3>
+            <p>Wireframes to pixel-perfect UI with accessibility and usability best practices.</p>
+            <a href="#contact" class="link">Request a quote →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/image3.png" alt="Frontend development" />
+          </div>
+          <div class="card-body">
+            <h3>Frontend Development</h3>
+            <p>Responsive, high-performance sites using HTML, CSS, and JavaScript.</p>
+            <a href="#contact" class="link">Request a quote →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/image4.webp" alt="SEO and performance" />
+          </div>
+          <div class="card-body">
+            <h3>SEO & Performance</h3>
+            <p>Core Web Vitals, semantic HTML, and optimization that search engines love.</p>
+            <a href="#contact" class="link">Request a quote →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Simple Text block (keeps wireframe minimal) -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div>
+        <h2>Why choose us?</h2>
+        <p>
+          We ship fast, communicate clearly, and focus on outcomes. Our approach is simple:
+          understand your users, design for clarity, and build with performance in mind.
+        </p>
+        <ul class="ticks">
+          <li>Mobile-first, accessible UI</li>
+          <li>Clean, maintainable code</li>
+          <li>Transparent timelines</li>
+        </ul>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <strong>95%</strong>
+          <span>Client satisfaction</span>
+        </div>
+        <div class="stat">
+          <strong>50+</strong>
+          <span>Projects shipped</span>
+        </div>
+        <div class="stat">
+          <strong>1.2s</strong>
+          <span>Avg. LCP on 4G</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Get in touch</h2>
+        <p>Tell us about your project. We’ll reply within 24 hours.</p>
+      </header>
+
+      <form id="contactForm" novalidate class="form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Briefly describe your project" required></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-success" id="formSuccess" hidden>Thanks! Your message has been sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> DevSolutions. All rights reserved.</p>
+      <ul class="footer-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
